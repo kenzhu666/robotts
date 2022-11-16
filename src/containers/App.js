@@ -17,6 +17,7 @@ const App = () => {
 
   const onSearchChange = (e) => {
     setSearchfield(e.target.value);
+    console.log('aaa')
   }
   const filteredRobots = robots.filter(robot =>{
       return robot.name.toLowerCase().includes(searchfield.toLowerCase());
